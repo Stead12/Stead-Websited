@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</head>
+<body>
+
+<div class="top-container">
+  <h1>News In Details</h1>
+  
+</div>
+
+<div class="header" id="myHeader">
+  <h2>Members of STEAD were certified and recognized by Deen of Engineering</h2>
+</div>
+
+<div class="content" style="color: white">
+  <h3></h3>
+  <p>STEAD Society were invited to an enterpreneurs workshop, which was held at CIvil Building Fourah Bay College</p>
+  <p>This hospicious and incredibly educative event was hosted by the Freetown Business School, Sierra Leone Institution of Engineers, OC Associates, Engineers for change in Sierra Leone and Royal Academy of Engineering</p>
+  <p>STEAD was invited based on the fact that, STEAD promotes development through engineering and innovation and indeed STEAD delivered exactly on what the organisation promised by an amazing performance that was acknowledged by the designated tutor Dr Peter Fearon</p>
+  <p>Members of STEAD contributed to the event by sharing their incredible business plan, which according to the organisation aim at promoting innovaton and most importantly to support the circular economy of the country</p>
+  
+  
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sticky_header by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 May 2019 14:18:35 GMT -->
+</html>

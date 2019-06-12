@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+<link href="css/news.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/team.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+	.mySlides {
+		display: none;
+	}
+img {
+	vertical-align: middle;
+	}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 10s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+}
+</style>
+	
+	
+<body>
+	
+<div class="part-1">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+      <a class="navbar-brand" href="index.html">STEAD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" id="middle-item">
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a onClick="myFunction()" class="nav-link" href="#">Video</a>
+          </li>
+          <li class="nav-item">
+            <a onClick="myFunction()" class="nav-link" href="#">Social</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+		<div id="follow">Follow STEAD</div>
+		  <span class="sr-only"></span>
+		  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		  <li><a onClick="myFunction()" href="#"><i class="fa fa-twitter"></i></a></li>
+      </div>
+    </nav>
+	
+	<div style="background-color: #312F2F;">
+	<div class="container" style="background-color: #312F2F;">
+	 <div class="row">
+		 <div class="col-6">
+			<div class="news-header">
+				<span class="logo">STEAD</span><span class="line">News Office</span>  
+			</div>
+		</div>
+	 </div> 
+	</div>
+
+<div class="container" style="background-color: #312F2F">
+<h2 style="text-align:center; color: white">The new adventure of stead</h2>
+<div class="row" style="background-color: #312F2F;">
+	<div class="col-6">
+	<div class="container">
+		<div class="col-12">
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 6</div>
+			  <img src="images/stead.jpg" style="width:100%" height="50%">
+			  <div class="text">Stead Logo</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 6</div>
+			  <img src="images/Group-6.jpg" style="width:100%" height="50%">
+			  <div class="text">Group Photo</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 6</div>
+			  <img src="images/Group-2.jpg" style="width:100%" height="50%">
+			  <div class="text">Group Photo</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">4 / 6</div>
+			  <img src="images/Group-4.jpg" style="width:100%" height="50%">
+			  <div class="text">Group Photo</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">5 / 6</div>
+			  <img src="images/Group-5.jpg" style="width:100%" height="50%">
+			  <div class="text">Group Photo</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">6 / 6</div>
+			  <img src="images/Ibrahim Vandy.jpg" style="width:100%" height="30%">
+			  <div class="text">Dean of Engineering certifying a member of STEAD</div>
+			</div>
+
+		</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+			</div>
+
+
+	</div>
+	</div>
+	</div>
+	
+	<div class="col-6">
+<div class="container" style="background-color: #312F2F;">
+	<div class="row">
+		<iframe src="news article.html" width="100%" height="400px">
+		
+		<div class="col-lg-12" style="text-align: center; color: white;">
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+			<p>simple things are just that sweet to do my dear</p>
+		</div>
+		</iframe>
+  </div>
+</div>
+</div>
+  
+ </div>
+</div>
+</div>
+
+	
+	</div>
+	<br>
+	
+	<!-- End of the first part of the news body-->
+	
+	<!-- Beginning of the second part of the body -->
+<div>	
+	
+	<div class="row" style="background-color: ghostwhite">
+  <div class="col-lg-6">
+    <h3 style="background-color: #413E3E; color: white" class="text-center text-uppercase">News around Campus</h3>
+			
+    <div class="row" style="background-color: ghostwhite">
+      <div class="col-lg-12">
+		  <img src="images/Mohamed Amara.jpg" class="img-thumbnail img-fluid" alt="Placeholder image" width="228" height="152" style="float: left">
+		<p>The STEAD society has being given a lab at Fourah Bay College-FBC.</p>
+		</div>
+      <div class="col-lg-12">
+		  <img src="images/stead.jpg" class="img-thumbnail img-fluid" alt="Placeholder image" width="228" height="152" style="float: left">
+		<div>The STEAD society has being given a lab at Fourah Bay College-FBC.</div>
+		</div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <h3 style="background-color: #413E3E; color: white" class="text-center text-uppercase">News around Campus</h3>
+			
+    <div class="row" style="background-color: ghostwhite">
+      <div class="col-lg-6">
+		  <img src="images/AI.jpg" alt="Norway" style="width:100%">
+				  <div class="container">
+					<p>This is about some things around campus...</p>
+				  </div>
+		</div>
+      <div class="col-lg-6">
+		  <img src="images/AI.jpg" alt="Norway" style="width:100%">
+				  <div class="container">
+					<p>This is about some things around campus...</p>
+				  </div>
+		</div>
+    </div>
+  </div>
+</div>
+	
+
+				
+				
+					<!-- Later in use 
+				  <tr>
+					<td><img src="images/AI.jpg" class="img-thumbnail img-fluid" alt="Placeholder image" width="50%" height="50%"></td>
+					<td>What a good society. A society that has come to change the mind of the young people to think how to innovate, and solve environmental issue...</td>
+				  </tr>
+				  <tr>
+					<td><img src="images/17263.jpg" class="img-thumbnail img-fluid" alt="Placeholder image" width="50%" height="50%"></td>
+					<td width="55%">What a good society. A society that has come to change the mind of the young people to think how to innovate, and solve environmental issue...</td>
+				  </tr>
+					-->
+				
+			  
+			</div>
+		
+	
+	
+	
+	
+				<!-- Continue Later
+			<div class="col-lg-6">
+				<div class="polaroid">
+				  <img src="images/stead.jpg" alt="Norway" style="width:100%">
+				  <div class="container">
+					<p>Northern Lights in Norway</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="polaroid">
+				  <img src="images/stead.jpg" alt="Norway" style="width:100%">
+				  <div class="container">
+					<p>Northern Lights in Norway</p>
+				  </div>
+				</div>
+			</div>
+				--> 
+		  
+		 
+	  
+	
+	
+
+	
+	<div style="background-color: ghostwhite"></div>
+	
+	<footer>
+		<div class="footer-main-div">
+			<div class="footer-social-icon">
+				<ul>
+					<li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+					<li><a onClick="myFunction()" href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+					<li><a onClick="myFunction()" href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+				</ul>	
+			</div>
+
+			<div class="footer-menu-one">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="about us.html">About Us</a></li>
+					<li><a href="about us.html#contactus" target="_blank">Contact Us </a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<ul>
+				<li><p>Copyright&copy;2019 STEAD. All right reserved. </p></li>
+				<li><a onClick="myFunction()" href="#">Privacy Policy</a></li>&#8739
+				<li><a onClick="myFunction()" href="#">Terms of Use</a></li>&#8739
+			</ul>
+		</div>
+	</footer>
+
+
+	<!-- Script for the carousel fade show -->
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
+
+<!-- Script for the pop-up form -->
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+    
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 May 2019 14:18:04 GMT -->
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.0.0.js"></script>
+	
+	<!-- Alert script --> 
+	 <script>
+function myFunction() {
+  alert("This Page is on development...");
+}
+	</script>
+</html>

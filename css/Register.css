@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	width: 100%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+	background-image: url(../images/AI.jpg) , url(../images/17263.jpg);
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover;
+	animation: slide 10s infinite;
+}
+
+#form-body {
+    margin-top: 50px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+#form-body button {
+    border-radius: 20px;
+}
+
+h4 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+	font-size: 30px;
+	letter-spacing: 10px;
+}
+
+h5 {
+	color: whitesmoke;
+	text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+	font-weight: bold;
+}
+
+#form-body p {
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#text {
+	display:none;
+	color:red;
+}
+
+#gender {
+    color: whitesmoke;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(../images/AI.jpg);
+    }
+    10% {
+        background-image: url(../images/17263.jpg);
+    }
+}
